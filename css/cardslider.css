@@ -1,0 +1,80 @@
+/* Carousel Media Quieres */
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+    color: #373737;
+    background: #fff;
+}
+
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+/* Prev/Next Icons */
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    height: 63px;
+    width: 63px;
+    outline: #000;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-image: none;
+    font-size: 110px;
+    margin-top: -50px;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: dodgerblue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: dodgerblue;
+}
+
+/* Card Images */
+
+.img {
+    display: block;
+    max-width: 350px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 35vw;
+    object-fit: cover;
+    cursor: pointer;
+}

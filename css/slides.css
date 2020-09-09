@@ -1,0 +1,237 @@
+/* Main Slideshow Settings */
+.slideshow-container {
+    position: relative;
+    max-width: 1400px; 
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Slideshow Image 1 */
+.slide-image1 {
+    display: none;
+    max-width: 100%;
+    padding-top: 450px;
+    background-image: url(../images/ben-XZWQ5K97F6E-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Slideshow Image 2 */
+.slide-image2 {
+    display: none;
+    max-width: 100%;
+    padding-top: 450px;
+    background-image: url(../images/dicson-uDzCftVzi6I-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Slideshow Image 3 */
+.slide-image3 {
+    display: none;
+    max-width: 100%;
+    padding-top: 450px;
+    background-image: url(../images/jack-b-8Wqm1W59Baw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Slideshow Prev/Next Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.next {
+    right: 0px!important;
+}
+
+.prev {
+    left: 0px!important;
+}
+
+.prev:hover, .next:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,0.8);
+    text-decoration: none;
+}
+
+/* Card Slider Prev/Next Buttons */
+.carousel-control-prev span {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.carousel-control-next span {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+/* Slideshow Text */
+.text {
+    color: #f5f5f5;
+    font-size: 18px;
+    padding: 50px 12px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+}
+
+.text-container {
+    width: 100%!important;
+    max-width: 850px!important;
+    margin: 0 auto!important;
+}
+
+.slideshow-container h2 {
+    font-size: 52px;
+    color: #f5f5f5;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.slideshow-container p {
+    margin-bottom: -60px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Booking Link */
+.waves-effect.waves-light.text {
+    display: block;
+    margin: 0 auto;
+    background: #f4364f;
+    color: #fff;
+    padding: 8px 12px;
+    max-width: 135px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 2px;
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    user-select: none;
+    vertical-align: middle;
+    z-index: 1;
+    transition: .3s ease-out;
+}
+
+.booking {
+    width: 100%;
+    left: 0;
+    bottom: -100px;
+    position: absolute;
+}
+
+/* Dots */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fade */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards!important;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards!important;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+/* Media Queries */
+@media screen and (max-width: 1400px) {
+    .slideshow-container {
+        position: relative;
+        max-width: 1400px;
+        height: auto; 
+        max-height: 600px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .slideshow-container {
+        position: relative;
+        max-width: 1000px; 
+        height: 0 auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .slideshow-container {
+        position: relative;
+        max-width: 750px; 
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slideshow-container {
+        position: relative;
+        max-width: 550px; 
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slideshow-container {
+        position: relative;
+        max-width: 400px; 
+        height: auto;
+    }
+}
